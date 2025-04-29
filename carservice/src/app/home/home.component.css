@@ -1,25 +1,35 @@
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-height: 600px;
-    overflow: hidden;
   }
-  
-  .video-bg {
+  .video-bg-container{
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    .video-bg {
+        height: 100%;
+        display: block;
+        position: absolute;
+        top:0;
+      }
   }
+
   
   .overlay-container {
-    position: absolute;
-    top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     gap: 20px;
     z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
   }
 
   .heading{
@@ -29,7 +39,7 @@
 
   .heading h1{
     height: 190px;
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .heading button{
@@ -41,11 +51,18 @@
     background-color: transparent;
     border: 1px solid white;
     }
-  
+  .link-box-container{
+    gap: 30px;
+  }
   .link-box {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 100px 10px;
+    display: inline-block;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-weight: bold;
     text-align: center;
+    width: max(60vw, 300px);
+    max-width: 96%;
   }
   
   .link-box a {
@@ -54,6 +71,7 @@
     text-decoration: none;
     margin: 4px 0;
     font-weight: 500;
+    padding: 35px;
   }
   
   .link-box a:hover {
