@@ -1,0 +1,30 @@
+<div class="outer-border">
+    <div class="navbar-container">
+        <img src="\assets\logo.jpg" height="120px" width="220px" alt="Logo" class="logo">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <!--Toggler button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible part -->
+            <div class="collapse navbar-collapse" id="collapsenav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"> <a routerLink="/home" [ngClass]="{'active': router.url === '/home'}"
+                            class="nav-link">Home</a></li>
+                    <li class="nav-item"><a routerLink="/services" [ngClass]="{'active': router.url === '/services'}"
+                            class="nav-link">Services</a></li>
+                    <li class="nav-item"> <a routerLink="/about" [ngClass]="{'active': router.url === '/about'}"
+                            class="nav-link">About</a></li>
+                    <li class="nav-item"> <a routerLink="/contact" [ngClass]="{'active': router.url === '/contact'}"
+                            class="nav-link">Contact</a></li>
+                    <li class="nav-item"> <a routerLink="/blog" [ngClass]="{'active': router.url === '/blog'}"
+                            class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

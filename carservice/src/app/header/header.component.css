@@ -1,0 +1,38 @@
+.outer-border {
+    position: sticky;  /*to make nav bar sticky at the top*/
+    top: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+  .navbar-container {
+    display: flex;            /* Make logo and links sit side by side */
+    align-items: center;       /* Vertically center align */
+    justify-content: space-between; /* Space between logo and links */
+  }
+  
+  .logo {
+    margin-right: 5px; /* Space between logo and links */
+  }
+  
+  .navbar {
+    display: flex; /* Make links in a row */
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .nav-link.active {
+    text-decoration: underline;
+    color: #ff6600;
+  }
+  
+  
+  
+ 
+  
