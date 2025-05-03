@@ -1,31 +1,119 @@
 <div class="video-wrapper">
     <div class="video-bg-container">
         <video class="video-bg" autoplay muted loop>
-            <source src="https://videos.pexels.com/video-files/6158066/6158066-hd_1280_720_30fps.mp4" type="video/mp4" />
+            <source src="https://videos.pexels.com/video-files/6158066/6158066-hd_1280_720_30fps.mp4"
+                type="video/mp4" />
         </video>
     </div>
     <!-- Overlay content on video -->
     <div class="overlay-container">
-       <div class="heading">
-        <h1>Best Car Service in Chennai</h1>
-        <p class="h4">Experience top-notch car service from a trusted company with 23 years of expertise </p>
-        <button>Explore</button>
-       </div>
-       <div class="link-box-container d-flex flex-column align-items-center">
-        <div class="link-box">
-            <a href="#">Expert maintenance for all car brands. </a>
+        <div class="heading">
+            <h1>Best Car Service in Chennai</h1>
+            <p class="h4">Experience top-notch car service from a trusted company with 23 years of expertise </p>
+            <button>Explore</button>
         </div>
+        <div class="link-box-container d-flex flex-column align-items-center">
+            <div class="link-box">
+                <a href="#">Expert maintenance for all car brands. </a>
+            </div>
 
-        <div class="link-box">
-            <a href="#">24 hrs helpline service available </a>
-            <a href="#">Car service can be available in EMI service </a>
+            <div class="link-box">
+                <a href="#">24 hrs helpline service available </a>
+                <a href="#">Car service can be available in EMI service </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Cashless insurance claims available with all maximum eminent Insurance Companies </a>
+                <a href="#">Insurance Renewal Services Available</a>
+            </div>
         </div>
+    </div>
+</div>
 
-        <div class="link-box">
-            <a href="#">Cashless insurance claims available with all maximum eminent Insurance Companies </a>
-            <a href="#">Insurance Renewal Services Available</a>
+<!-- Introduction part -->
+<div>
+    <h1 class="text-center">Welcome to KRSA AutoCare –<span class="Intro-head"> Your Trusted and Bosch authorized
+            service center</span></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <p class="text-start">At KRSA AutoCare, we pride ourselves on delivering top-notch, reliable car
+                    services that keep your vehicle running smoothly. As a Bosch-authorized service center, we bring the
+                    best expertise to every job, ensuring quality you can trust.</p>
 
+                <p>Why Choose Us?</p>
+                <p>➡️ Convenience: Free pick-up and delivery across Chennai. </p>
+                <p>➡️Flexible Payments: Accept all digital payments and offer EMI services.</p>
+                <p>➡️ Support: 24/7 helpline and cashless insurance claims.</p>
+                <p>➡️Comfort: Enjoy our customer lounge while you wait.</p>
+                <p class="pb-5">Experience the best car service in Chennai today!</p>
+
+                <iframe width="530" height="370" src="https://www.youtube.com/embed/MMdeusAhu70"
+                    title="best car service in chennai" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1 class="mt-5">Our general service offer </h1>
+                <img src="assets/image.png" height="370px" width="530px" class="pb-4 pt-5">
+                <p>Need the best car service near you? Come to our Krsa AutoCare Authorised Bosch Service Centre. We
+                    only use Bosch parts, which make your car more reliable and improve its performance. Whether it's a
+                    repair or regular maintenance, we work on all types of cars. Trust us to keep your car running well.
+                </p>
+                <h1 class="text-center">One stop solution for multibrand car services</h1>
+            </div>
+            <div class="col-sm-3"></div>
         </div>
-       </div>
+    </div>
+    <!-- images-->
+    <!-- <div class="ms-5">
+    <div class="d-flex p-3 ms-5">
+        <img src="assets/car1.webp" alt="Card image" width="400px" height="316px" class="me-4">
+        <img src="assets/car2.webp" alt="Card image" width="400px" height="316px" class="me-4">
+        <img src="assets/car3.webp" alt="Card image" width="400px" height="316px">
+    </div>
+    <div class="d-flex p-3 ms-5">
+        <img src="assets/car4.webp" alt="Card image" width="400px" height="316px" class="me-4">
+        <img src="assets/car5.webp" alt="Card image" width="400px" height="316px" class="me-4">
+        <img src="assets/car6.webp" alt="Card image" width="400px" height="316px">
+    </div>
+    </div> -->
+
+    <div class="container my-5">
+        <div class="gallery-tile-container">
+            <div class="gallery-tile" (click)="showImage('assets/car1.webp')">
+                <img src="assets/car1.webp" class="img-fluid h-100 w-100" alt="Car 1" style="object-fit: cover;">
+            </div>
+            <div class="gallery-tile" (click)="showImage('assets/car2.webp')">
+                <img src="assets/car2.webp" class="img-fluid h-100 w-100" alt="Car 2" style="object-fit: cover;">
+            </div>
+            <div class="gallery-tile" (click)="showImage('assets/car3.webp')">
+                <img src="assets/car3.webp" class="img-fluid h-100 w-100" alt="Car 3" style="object-fit: cover;">
+            </div>
+
+            <div class="gallery-tile" (click)="showImage('assets/car4.webp')">
+                <img src="assets/car4.webp" class="img-fluid h-100 w-100" alt="Car 4"
+                    style="object-fit: cover;">
+            </div>
+            <div class="gallery-tile" (click)="showImage('assets/car5.webp')">
+                <img src="assets/car5.webp" class="img-fluid h-100 w-100" alt="Car 5"
+                    style="object-fit:  cover;">
+            </div>
+            <div class="gallery-tile" (click)="showImage('assets/car6.webp')">
+                <img src="assets/car6.webp" class="img-fluid h-100 w-100" alt="Car 6" style="object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="image-viewer d-flex flex-column" *ngIf="showImageViewer">
+    <div class="d-flex justify-content-end" (click)="hideImage()">
+        <div>close</div>
+    </div>
+    <div class="image-container flex-grow-1 d-flex align-items-center justify-content-center position-relative">
+        <div (click)="hideImage()" class="position-absolute top-0 start-0 w-100 h-100"></div>
+        <img [src]="currentImgSrc">
     </div>
 </div>
