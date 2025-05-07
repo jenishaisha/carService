@@ -65,18 +65,6 @@
         </div>
     </div>
     <!-- images-->
-    <!-- <div class="ms-5">
-    <div class="d-flex p-3 ms-5">
-        <img src="assets/car1.webp" alt="Card image" width="400px" height="316px" class="me-4">
-        <img src="assets/car2.webp" alt="Card image" width="400px" height="316px" class="me-4">
-        <img src="assets/car3.webp" alt="Card image" width="400px" height="316px">
-    </div>
-    <div class="d-flex p-3 ms-5">
-        <img src="assets/car4.webp" alt="Card image" width="400px" height="316px" class="me-4">
-        <img src="assets/car5.webp" alt="Card image" width="400px" height="316px" class="me-4">
-        <img src="assets/car6.webp" alt="Card image" width="400px" height="316px">
-    </div>
-    </div> -->
 
     <div class="container my-5">
         <div class="gallery-tile-container">
@@ -91,29 +79,60 @@
             </div>
 
             <div class="gallery-tile" (click)="showImage('assets/car4.webp')">
-                <img src="assets/car4.webp" class="img-fluid h-100 w-100" alt="Car 4"
-                    style="object-fit: cover;">
+                <img src="assets/car4.webp" class="img-fluid h-100 w-100" alt="Car 4" style="object-fit: cover;">
             </div>
             <div class="gallery-tile" (click)="showImage('assets/car5.webp')">
-                <img src="assets/car5.webp" class="img-fluid h-100 w-100" alt="Car 5"
-                    style="object-fit:  cover;">
+                <img src="assets/car5.webp" class="img-fluid h-100 w-100" alt="Car 5" style="object-fit:  cover;">
             </div>
             <div class="gallery-tile" (click)="showImage('assets/car6.webp')">
                 <img src="assets/car6.webp" class="img-fluid h-100 w-100" alt="Car 6" style="object-fit: cover;">
             </div>
         </div>
     </div>
-
-
-
 </div>
 
 <div class="image-viewer d-flex flex-column" *ngIf="showImageViewer">
     <div class="d-flex justify-content-end" (click)="hideImage()">
-        <div>close</div>
+        <div><button type="button" class="btn-close my-close" aria-label="Close"></button>
+        </div>
     </div>
     <div class="image-container flex-grow-1 d-flex align-items-center justify-content-center position-relative">
         <div (click)="hideImage()" class="position-absolute top-0 start-0 w-100 h-100"></div>
         <img [src]="currentImgSrc">
     </div>
 </div>
+
+<h3 class="text-center">KRSA AutoCare: We Service All Car Brands</h3>
+<p class="text-center">At KRSA AutoCare, we offer multibrand car service for all types of vehicles, whether you drive a
+    Maruti Suzuki,
+    Mercedes-Benz, or any other brand. Our skilled mechanics use only genuine Bosch parts, ensuring your car gets the
+    best care possible.</p>
+
+<div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+    <a href="/contact" class="animate-link">
+        Book Your Car Service Online
+    </a>
+</div>
+<p style="text-align: center;">It's easy to get your car serviced with us. You can book a car mechanic online through
+    our website. Just choose your
+    car brand, select the service you need, and pick a time that works for you. With just a few clicks, your car will be
+    in expert hands.</p>
+
+<h2 class="text-center">Brands We Service:</h2>
+<h3 class="ps-5">Indian Car Brands</h3>
+<ul class="brand-list">
+    <li>➡️ Maruti Suzuki</li>
+    <li>➡️ Tata Motors</li>
+    <li>➡️ Mahindra</li>
+    <li>➡️ Hyundai</li>
+    <li>➡️ Honda</li>
+    <li>➡️ Toyota</li>
+    <li>➡️ Ford</li>
+</ul>
+<h3 class="ps-5">Luxury Car Brands</h3>
+<ul class="brand-list">
+    <li>➡️ Mercedes-Benz</li>
+    <li>➡️ BMW</li>
+    <li>➡️ Audi</li>
+    <li>➡️ Jaguar</li>
+</ul>
