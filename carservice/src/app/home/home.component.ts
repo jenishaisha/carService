@@ -25,3 +25,5 @@ export class HomeComponent {
     document.body.classList.remove("overflow-hidden")
   }
 }
+
+

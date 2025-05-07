@@ -1,0 +1,7 @@
+.service-list{
+    list-style: none;
+    padding: 30px;
+}
+.service-list li{
+    padding: 10px;
+}
