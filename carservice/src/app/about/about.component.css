@@ -1,0 +1,13 @@
+.h1 {
+    height: 190px;
+    font-size: 70px;
+}
+.button-edit{
+    padding: 13px 25px;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: black;
+   }
