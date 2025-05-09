@@ -14,4 +14,7 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(public router: Router){}
+
+  isNavbarCollapsed = false;
+
 }

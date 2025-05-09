@@ -23,16 +23,27 @@
   .nav-link {
     margin-right: 20px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
+    color: #0076BA;
+    font-weight: 600;
+    font-size: 16px;
   }
   .nav-link.active {
     text-decoration: underline;
-    color: #ff6600;
+    font-size: 17px;
+    color: #0076BA;
   }
   
-  
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #0076BA;
+
+     /* slightly darker shade on hover (optional) */
+  }
   
  
-  
+ .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+    border: 0px solid #0076BA;
+}
