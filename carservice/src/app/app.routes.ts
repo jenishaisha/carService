@@ -5,6 +5,9 @@ import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { Component } from '@angular/core';
+import { BlogImg1PageComponent } from './blog-img1-page/blog-img1-page.component';
+import { BlogImg2PageComponent } from './blog-img2-page/blog-img2-page.component';
 
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
@@ -12,6 +15,8 @@ export const routes: Routes = [
     {path:'about',component:AboutComponent},
     {path:'contact',component:ContactComponent},
     {path:'blog',component:BlogComponent},
+    {path:'blog_img1',component:BlogImg1PageComponent},
+    {path:'blog_img2',component:BlogImg2PageComponent},
     {path: '', redirectTo: 'home',pathMatch: 'full'},
     {path: '**',component:PageNotFoundComponent}
 ];

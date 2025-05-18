@@ -1,14 +1,24 @@
 <h1 class="text-center m-5" style="font-size: 4rem;"><b>Blog</b></h1>
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-        
-        
-      </div>
-      <div class="col-6">
-        
-        
-      </div>
+  <div class="row justify-content-center">
+    <!-- First Blog Card -->
+    <div class="col-md-5 m-3" *ngFor="let blog of displayDate">
+      <a href="blog_img1" class="text-decoration-none text-black">
+        <div class="blog-img-container pb-3 mt-4" [ngStyle]="{'backgroundImage': 'url('+blog.image+')'}">
+        </div>
+        <h4 class="mt-2 fs-4"><b>{{blog.title}}</b></h4>
+        <p>{{blog.description}}</p>
+        <p class="mb-0">{{blog.author}}</p>
+        <p>{{blog.createdDate}} · {{blog.readingTime}}</p>
+      </a>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <app-paginator
+        [dataSource]="blogContents"
+        [itemsPerPage]="4"
+        (filteredData)="setPageDate($event)"
+      ></app-paginator>
     </div>
   </div>
-  
+</div>
+=
