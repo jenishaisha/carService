@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-    color: #0E3386;
+    color: #191970	;
     font-weight: 400;
 
 
@@ -44,7 +44,13 @@ font-size: 14px;
     font-weight: 400;
     color: #000;
 }
-h2{
-font-family: auto;
+.mat-typography h2{
+font-family: initial;
+color: #0E3386;;
+
+}
+.mat-typography h6{
+font-family: initial;
+color: #000;
 
 }
