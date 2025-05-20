@@ -4,6 +4,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { filter } from 'rxjs';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { SharedService } from './shared/services/shared.service';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private router: Router,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private sharedService: SharedService
   ){
 
   }
@@ -30,28 +31,7 @@ export class AppComponent implements OnInit {
       filter(event => event instanceof NavigationEnd)
     ).subscribe(event => {
       window.scrollTo({ top: 0, behavior: 'instant' });
-      this.observeElementsForAnim();
-    });
-  }
-  
-  
-  private observeElementsForAnim(){
-    if (!isPlatformBrowser(this.platformId) || !('IntersectionObserver' in window))
-      return;
-
-    const inViewport = (entries:any) => {
-      entries.forEach((entry:any) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("anim-target--active");
-          Obs.unobserve(entry.target);
-        }
-      });
-    };
-    const Obs = new IntersectionObserver(inViewport, {
-      threshold: 0.1
-    });
-    document.querySelectorAll('.anim-target').forEach(el => {
-      Obs.observe(el);
+      this.sharedService.observeElementsForAnim();
     });
   }
 

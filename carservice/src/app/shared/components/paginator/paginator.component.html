@@ -1,0 +1,17 @@
+<div class="d-flex">
+    <div>
+        <button (click)="previous()">
+            <
+        </button>
+    </div>
+    <div *ngFor="let page of pages; let index = index">
+        <button (click)="goToPage(index)" [ngClass]="{'page--active': index == currentPageIndex}">
+            {{index+1}}
+        </button>
+    </div>
+    <div>
+        <button (click)="next()">
+            >
+        </button>
+    </div>
+</div>
