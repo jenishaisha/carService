@@ -138,26 +138,27 @@
     line-height: 100px;
     font-size: 27px;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  .animate-link:hover {
+.animate-link:hover {
     transform: scale(1.1);
     color: #007bff;
-  }
+}
 
-  .brand-list {
+.brand-list {
     list-style: none;
-    padding: 0;
-    font-size: 20px;
-  }
+    padding: 0px 0px 0px 47px;
+    font-size: 16px;
+    color: #0047AB;
+}
 
-  .brand-list li {
+.brand-list li {
     margin-bottom: 10px;
-  }
+}
 
-  
+.chooseUS {
 
-
-  
-
-  
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}

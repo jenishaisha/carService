@@ -1,19 +1,60 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-.anim-target{
+.anim-target {
     opacity: 0;
     transform: translateY(20%);
     transition-delay: .1s;
     transition-timing-function: ease;
     transition-duration: .65s;
 }
-.anim-target--active{
+
+.anim-target--active {
     opacity: 1;
     transform: translateY(0);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    color: #191970	;
+    font-weight: 400;
+
+
+}
+p{
+font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.mat-typography h2{
+font-family: initial;
+color: #0E3386;;
+
+}
+.mat-typography h6{
+font-family: initial;
+color: #000;
+
+}
 
 .mat-mdc-list-option .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{
     background-color: rgb(5, 120, 186)!important;
@@ -21,4 +62,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } main
