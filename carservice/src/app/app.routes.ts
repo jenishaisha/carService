@@ -11,6 +11,7 @@ import { BlogImg2PageComponent } from './blog-img2-page/blog-img2-page.component
 import { BlogImg3PageComponent } from './blog-img3-page/blog-img3-page.component';
 import { BlogImg4PageComponent } from './blog-img4-page/blog-img4-page.component';
 import { BlogImg5PageComponent } from './blog-img5-page/blog-img5-page.component';
+import { BlogImg6PageComponent } from './blog-img6-page/blog-img6-page.component';
 
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
@@ -23,6 +24,7 @@ export const routes: Routes = [
     {path:'blog_img3',component:BlogImg3PageComponent},
     {path:'blog_img4',component:BlogImg4PageComponent},
     {path:'blog_img5',component:BlogImg5PageComponent},
+    {path:'blog_img6',component:BlogImg6PageComponent},
     {path: '', redirectTo: 'home',pathMatch: 'full'},
     {path: '**',component:PageNotFoundComponent}
 ];

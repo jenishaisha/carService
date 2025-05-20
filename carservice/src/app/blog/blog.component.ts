@@ -66,6 +66,7 @@ export class BlogComponent {
       readingTime: "2 min read"
     },
     {
+      link:"/blog_img6",
       image: "assets/blog-img6.webp",
       title: "Your blog post",
       description: "Blog post description.",
