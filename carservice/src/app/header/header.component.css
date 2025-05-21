@@ -15,6 +15,7 @@
   
   .logo {
     margin-right: 5px; /* Space between logo and links */
+    padding: 6px;
   }
   
   .navbar {
@@ -26,7 +27,7 @@
     text-decoration: none;
     color: #0076BA;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
   }
   .nav-link.active {
     text-decoration: underline;
@@ -38,7 +39,7 @@
     text-decoration: underline;
     color: #0076BA;
 
-     /* slightly darker shade on hover (optional) */
+  
   }
   
  

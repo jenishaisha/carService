@@ -29,7 +29,7 @@
     flex-direction: column;
     gap: 20px;
     z-index: 2;
-    padding-top: 50px;
+    padding-top: 160px;
     padding-bottom: 50px;
     position: relative;
 }
@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-.heading h1 {
+.heading h3 {
     height: 190px;
     font-size: 70px;
 }
@@ -161,4 +161,8 @@
     font-size: 14px;
     font-weight: 500;
     color: #000;
+}
+:hover .onlineToday{
+
+    font-size: 18px;
 }
