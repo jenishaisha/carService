@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-sm-3"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-6" style="padding-top: 57px;">
         <h1 class="m-5 fs-1 lh-sm text-center anim-target">Experience the best car service in Chennai</h1>
         <img src="assets/contact-img1.webp" height="450px" width="530px" class="pb-4 ms-5 ps-5 mb-3 anim-target">
         <p class="mb-5 lh-base anim-target" style="font-size: 1.25rem">Keep your car safe and running smoothly with an
@@ -30,13 +30,17 @@
                 <p>
                     <mat-form-field appearance="outline" style="width: 75%">
                         <mat-label>Enter your Phone Number</mat-label>
-                        <input matInput type="tel" placeholder="phone number" pattern="[0-9]*" maxlength="10" required
-                            (keypress)="onlyNumberKey($event)" formControlName="phone">
-                        <mat-error *ngIf="bookNowForm.get('phone')?.hasError('required')">Phone number is
-                            required</mat-error>
-                        <mat-error *ngIf="bookNowForm.get('phone')?.hasError('pattern')">Enter a valid 10-digit
-                            number</mat-error>
+                        <input matInput type="text" placeholder="phone number" maxlength="10" pattern="^[0-9]{10}$"
+                            required formControlName="phone"
+                       >
+                        <mat-error *ngIf="bookNowForm.get('phone')?.hasError('required')">
+                            Phone number is required
+                        </mat-error>
+                        <mat-error *ngIf="bookNowForm.get('phone')?.invalid && bookNowForm.get('phone')?.touched">
+                            Enter a valid 10-digit number
+                        </mat-error>
                     </mat-form-field>
+
                 </p>
                 <p>
                     <mat-form-field appearance="outline" style="width: 75%">

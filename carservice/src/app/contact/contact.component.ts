@@ -38,11 +38,7 @@ export class ContactComponent {
     serviceType: ['']
   })
 
-  onlyNumberKey(event: KeyboardEvent): boolean {
-    const charCode = event.which ? event.which : event.keyCode;
-    return charCode >= 48 && charCode <= 57; // Allow only digits (0-9)
-  }
-
+ 
   onServiceTypeChange(event: any) {
     const selected = event.source.selectedOptions.selected.map((item:any) => item.value);
     this.bookNowForm.get('serviceType')?.setValue(selected);
