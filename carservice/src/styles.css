@@ -68,3 +68,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 b {
     font-weight: 400;
 }
+img{
+
+    object-fit: cover;
+}
